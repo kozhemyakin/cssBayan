@@ -99,3 +99,36 @@ img {
     display: none;
     margin: 0 auto;
 }
+  
+ul li input[type=radio]:checked ~ label img {
+    height: 300px;
+    width: 300px;
+    padding-top: 10px;
+    display: block;
+    opacity: 100;
+}
+  
+ul li:hover label > img {
+    height: 300px;
+    width: 300px;
+    padding-top: 10px;
+    display: block;
+    opacity: 100;
+}
+
+ul li:hover label {
+    color: rgb(26, 66, 243);
+}
+
+input {
+    visibility: hidden;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+li i:before, ul li i:after {
+    transition: all 1s ease-in-out;
+}
